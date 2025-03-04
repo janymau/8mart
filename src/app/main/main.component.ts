@@ -61,6 +61,7 @@ export class MainComponent {
                 }
             }, 20);
         }, 100);
+        this.count=0;
     }
 
     setTimeout(() => {
@@ -71,6 +72,10 @@ export class MainComponent {
   noButton(){
     this.noButtonElement.style.position = "absolute";
     if(this.count < 5){
+      
+      this.imagePATH = "assets/angry-cat.jpg";
+      this.bodyMainText.innerText = "Ты серьезно?";
+      this.bodyMainText2.innerText = "Ия дегенди бассай";
       const yesWidthHeight = window.getComputedStyle(this.yesButtonElement); 
       const noWidthHeight = window.getComputedStyle(this.noButtonElement);
 
@@ -95,7 +100,9 @@ export class MainComponent {
       this.noButtonElement.style.left = `${Math.random()* noWidth}px`
       this.noButtonElement.style.top = `${Math.random() * window.innerHeight}px`
 
-      this.imagePATH = "assets/angry-cat.jpg";
+
+
+
       
 
 
@@ -103,9 +110,8 @@ export class MainComponent {
     }
     else{
       this.imagePATH = "assets/black-cat-2.jpg"
-
       this.noButtonElement.style.display = "none";
-   this.bodyMainText.innerText = "Ты чеееее многое теряешь!!";
+      this.bodyMainText.innerText = "Ты чеееее многое теряешь!!";
       this.bodyMainText2.innerText = "Последний шанс детка, подумай";
 
     }

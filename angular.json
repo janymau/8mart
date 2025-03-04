@@ -13,7 +13,13 @@
                 "build": {
                     "builder": "@angular-devkit/build-angular:application",
                     "options": {
-                        "outputPath": "dist/8march",
+
+                        "outputPath": "dist/8mart",
+                        "baseHref": "/8mart/",
+                        "deployUrl": "/8mart/",
+
+
+
                         "index": "src/index.html",
                         "browser": "src/main.ts",
                         "polyfills": ["zone.js"],
