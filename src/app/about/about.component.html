@@ -1,0 +1,17 @@
+<div class="main">
+    <div>
+        <img [src]="imgPATH" class="img">
+
+    </div>
+    <input class="input" placeholder="Атынды жазып жиберш" [(ngModel)]="name" (input)="updateName()">
+    <h1 class="header-main-text">Напиши мне в:</h1>
+
+    <div class="messengers">
+
+        <a href="https://www.instagram.com/direct/t/17842063100910911/"><img [src]="imgINST" class="icon"></a>
+        <a href="https://t.me/qoltykbatyr"><img [src]="imgTG" class="icon-2"></a>
+        <a href="https://wa.me/777768337178?text=Жааааан,%20мен%20{{name}}%20дайынмын%20давай%20шыгайык!
+        "><img [src]="imgWHT" class="icon-3"></a>
+    </div>
+
+</div>
